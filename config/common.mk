@@ -128,12 +128,21 @@ PRODUCT_PACKAGES += \
     Superuser \
     su
 
-# Optional CM packages
-PRODUCT_PACKAGES += \
-    VideoEditor \
-    VoiceDialer \
-    SoundRecorder \
-    Basic
+ifeq ($(CM_BUILD),wingray)
+    # Optional CM packages
+    PRODUCT_PACKAGES += \
+        SoundRecorder \
+        Basic
+    # VideoEditor \
+    # VoiceDialer \
+else
+    # Optional CM packages
+    PRODUCT_PACKAGES += \
+        VideoEditor \
+        VoiceDialer \
+        SoundRecorder \
+        Basic
+endif
 
 # Custom CM packages
 PRODUCT_PACKAGES += \
