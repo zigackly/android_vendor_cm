@@ -13,11 +13,6 @@ ifeq ($(CM_BUILD),wingray)
         LiveWallpapers \
         LiveWallpapersPicker \
         PhaseBeam
-# HoloSpiralWallpaper \
-# NoiseField \
-# Galaxy4 \
-# VisualizationWallpapers \
-# MagicSmokeWallpapers \
 else
     # Bring in all audio files
     include frameworks/base/data/sounds/NewAudio.mk
