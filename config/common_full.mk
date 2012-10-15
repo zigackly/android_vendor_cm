@@ -10,9 +10,7 @@ ifeq ($(CM_BUILD),wingray)
 
     # Optional CM packages
     PRODUCT_PACKAGES += \
-        LiveWallpapers \
-        LiveWallpapersPicker \
-        PhaseBeam
+        LiveWallpapersPicker 
 else
     # Bring in all audio files
     include frameworks/base/data/sounds/NewAudio.mk
