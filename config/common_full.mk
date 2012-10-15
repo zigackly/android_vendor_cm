@@ -2,8 +2,8 @@
 $(call inherit-product, vendor/cm/config/common.mk)
 
 ifeq ($(CM_BUILD),wingray)
-    # Bring in limited audio files for wingray
-    include frameworks/base/data/sounds/MinimalAudio.mk
+    # Bring in all audio files (wingray build will have fewer)
+    include frameworks/base/data/sounds/NewAudio.mk
 
     # Include minimal CM audio files
     include vendor/cm/config/cm_minimal_audio.mk
