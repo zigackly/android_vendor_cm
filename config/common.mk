@@ -142,15 +142,26 @@ else
         Basic
 endif
 
-# Custom CM packages
-PRODUCT_PACKAGES += \
-    Trebuchet \
-    DSPManager \
-    libcyanogen-dsp \
-    audio_effects.conf \
-    CMWallpapers \
-    Apollo \
-    CMUpdater
+ifeq ($(CM_BUILD),wingray)
+    # Custom CM packages
+    PRODUCT_PACKAGES += \
+        Trebuchet \
+        DSPManager \
+        libcyanogen-dsp \
+        audio_effects.conf \
+        CMWallpapers \
+        Apollo 
+else
+    # Custom CM packages
+    PRODUCT_PACKAGES += \
+        Trebuchet \
+        DSPManager \
+        libcyanogen-dsp \
+        audio_effects.conf \
+        CMWallpapers \
+        Apollo \
+        CMUpdater
+endif
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \
