@@ -100,6 +100,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES +=  \
     vendor/cm/proprietary/Term.apk:system/app/Term.apk \
+    vendor/cm/proprietary/Goomanager.apk:system/app/Goomanager.apk \
     vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
 
 # Bring in camera effects
@@ -145,8 +146,7 @@ PRODUCT_PACKAGES += \
     libcyanogen-dsp \
     audio_effects.conf \
     CMWallpapers \
-    Apollo \
-    CMUpdater
+    Apollo
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \
