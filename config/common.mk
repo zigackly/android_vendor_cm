@@ -102,7 +102,6 @@ PRODUCT_COPY_FILES +=  \
     vendor/cm/proprietary/Term.apk:system/app/Term.apk \
     vendor/cm/proprietary/Goomanager.apk:system/app/Goomanager.apk \
     vendor/cm/proprietary/FastReboot.apk:system/app/FastReboot.apk \
-    vendor/cm/proprietary/RootBrowser.apk:system/app/RootBrowser.apk \
     vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
 
 # Bring in camera effects
@@ -148,7 +147,8 @@ PRODUCT_PACKAGES += \
     libcyanogen-dsp \
     audio_effects.conf \
     CMWallpapers \
-    Apollo
+    Apollo \
+    CMFileManager
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \
