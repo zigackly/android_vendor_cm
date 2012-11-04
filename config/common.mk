@@ -153,7 +153,8 @@ ifeq ($(CM_BUILD),wingray)
         libcyanogen-dsp \
         audio_effects.conf \
         CMWallpapers \
-        Apollo 
+        Apollo \
+        CMFileManager
 else
     # Custom CM packages
     PRODUCT_PACKAGES += \
@@ -163,7 +164,8 @@ else
         audio_effects.conf \
         CMWallpapers \
         Apollo \
-        CMUpdater
+        CMUpdater \
+        CMFileManager
 endif
 
 # Extra tools in CM
